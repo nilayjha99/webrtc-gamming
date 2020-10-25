@@ -78,8 +78,8 @@
                     // Create own peer object with connection to shared PeerJS server
                     peer = new Peer(null, {
                         debug: 2,
-                        host: '877f4ac9042b.ngrok.io', 
-                        port: '80', 
+                        host: '127.0.0.1', 
+                        port: '9000', 
                         path: '/myapp',
                         secure: false
                     });
@@ -137,7 +137,7 @@
                     // Create connection to destination peer specified in the input field
                     conn = peer.connect(recvIdInput.value, {
                         reliable: true,
-                        host: '877f4ac9042b.ngrok.io', 
+                        host: '127.0.0.1', 
                         port: '9000', 
                         path: '/myapp',
                         secure: false
